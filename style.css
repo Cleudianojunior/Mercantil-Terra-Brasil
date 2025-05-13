@@ -642,3 +642,88 @@ h1,h2,h3,h4,h5,h6 {
     height: 740px;
   }
 }
+
+/*Css paginas Detalhes produtos Individuais*/
+
+
+/* Seção geral de detalhes do produto */
+.section-produto-detalhes {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Informações de preço e ações (como adicionar ao carrinho) */
+.section-produto-preco-detalhes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Imagem do produto */
+.imagem-produto-detalhes {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 3px 7px #b4b4b4;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .imagem-produto-detalhes {
+    margin: 0;
+    max-width: 300px;
+    height: auto;
+    box-shadow: none;
+  }
+}
+
+/* Nome do produto */
+.section-nome-produto-detalhes {
+  font-size: 1.8em;
+  display: block;
+}
+
+/* Container do preço */
+.strong-preco-produto {
+  display: flex;
+  margin-left: 30px;
+}
+
+/* Estilo do valor do preço */
+.preco-inteiro {
+  font-size: 2.6em;
+}
+
+.cifrao-preco {
+  margin: 5px 12px 0 0;
+  font-size: 1.5em;
+}
+
+.preco-fracionado {
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+
+/* Caixa para controles do carrinho */
+.caixa-carrinho-produto {
+  width: 200px;
+  display: flex;
+}
+
+/* Código do produto */
+.codigo-sobre-produto {
+  margin-top: 12px;
+  font-size: 0.9em;
+}
+
+/* Avisos abaixo do produto */
+.avisos-sobre-produtos {
+  font-size: 0.8em;
+}
